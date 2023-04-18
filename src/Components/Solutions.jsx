@@ -1,6 +1,5 @@
 import React from 'react'
-import ArticlesSolutions from './ArticlesSolutions'
-import Article from './Article'
+import DisplayContent from './DisplayContent'
 
 function Solutions() {
 
@@ -25,7 +24,7 @@ function Solutions() {
     <section>
         <h2>Notre solution en 3 points</h2>
       
-        {items.map((item, i)=> <article key={i}> {<Article item={item} />} </article>)}
+        {items.map((item, i)=> <article key={i}> {<DisplayContent item={item} />} </article>)}
 
     </section>
     

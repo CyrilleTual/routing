@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './Article'
+import DisplayContent from './DisplayContent'
 
 function Hebergement() {
 
@@ -36,7 +36,7 @@ function Hebergement() {
     <section>
         <h2>Choisissez votre style d'hébergement</h2>
       
-        {items.map((item, i)=> <article key={i}> {<Article item={item} />} </article>)}
+        {items.map((item, i)=> <article key={i}> {<DisplayContent item={item} />} </article>)}
 
     </section>
     

@@ -127,6 +127,7 @@ article {
     padding: 1.5rem 0;
 }
 
+
 .price {
     color: var(--primary); 
     text-align: center;   
@@ -167,11 +168,36 @@ fieldset{
     color: var(--body-bg);
 }
 
+
+/* details */
+.details{
+    margin: auto;
+    background-color: #6a6d7f1e;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.details h1 {
+    padding: 5px 0 0px;
+    color: var(--secondary); 
+}
+
+.details p:not(.price) {
+    text-align: left;
+}
+
+/* Contact */
+address {
+    padding-top: 10px; padding-bottom: 10px;
+    text-align: center;
+}
+
+
 footer {
     background-color: var(--secondary);
 }
 
-/* ICON */
+/* ICON */:not(.sub-header, .search)
 .fa-user {
     display: block;
     text-align: center;  
