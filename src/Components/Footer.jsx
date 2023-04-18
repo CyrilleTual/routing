@@ -1,15 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer>
             <nav>
-                <a href="./">Accueil</a>
-                <a href="./">Serveur Mutualisé</a>
-                <a href="./">Serveur Dédié</a>
-                <a href="./">Solution Cloud</a>
-                <a href="./">Contact</a>
-                <a href="./">Se connecter</a>
+              <Link to={"./"}>Accueil</Link>
+              <Link to={"mutualise"}>Serveur Mutualisé</Link>
+              <Link to={"dedie"}>Serveur Dédié</Link>
+              <Link to={"cloud"}>Service "Cloud"</Link>
+              <Link to={"contact"}>Contact</Link>
+              <Link to={"connect"}>Se connecter</Link>
+
             </nav>
         </footer>
   )
