@@ -174,12 +174,20 @@ fieldset{
     margin: auto;
     background-color: #6a6d7f1e;
     border-radius: 30px;
+    border: solid 1px var(--secondary);
     margin-bottom: 15px;
 }
 
 .details h1 {
     padding: 5px 0 0px;
     color: var(--secondary); 
+}
+
+.imgDetails {
+    width : 200px;
+    margin: 10px;
+    float: left;
+    border-radius: 10px;
 }
 
 .details p:not(.price) {
