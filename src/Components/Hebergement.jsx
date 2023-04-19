@@ -4,7 +4,8 @@ import DisplayContent from './DisplayContent'
 function Hebergement() {
 
     const items =[
-        {
+        {   
+            icon : true,
             title: "Serveur mutualisé",
             price: "9,99",
             text: [
@@ -13,6 +14,7 @@ function Hebergement() {
             ],
         },
         {
+            icon : true,
             title: "Serveur Dédié",
             price: "19,99",
             text: [
@@ -21,6 +23,7 @@ function Hebergement() {
             ],
         },
         {
+            icon : true,
             title: "Service cloud",
             price: "29,99€",
             text: [

@@ -5,6 +5,7 @@ function Mutualise() {
 
   const items =[
     {
+      icon : false,
       price: "9,99",
       text: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam.",

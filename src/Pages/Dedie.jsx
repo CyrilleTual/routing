@@ -5,6 +5,7 @@ import server from '../assets/img/pexels-brett-sayles-2881233.jpg'
 function Dedie() {
   const items =[
     {
+      icon : false,
       price: "19,99",
       text: [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, recusandae ad quo et delectus accusamus.",

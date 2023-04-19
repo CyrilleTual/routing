@@ -6,14 +6,17 @@ function Solutions() {
     // necessité de mette le texte dans un tableau pour compatibilité avec la section "solution"
     const items =[              
         {
+            icon : true,    
             title: "Configuration",
             text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit Facilis qui ipsum maxime architecto illum nam.",]
         },
         {
+            icon : true,
             title: "Monitoring",
             text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit Facilis qui ipsum maxime architecto illum nam.",]
         },
         {
+            icon : true,
             title: "sauvegarde",
             text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit Facilis qui ipsum maxime architecto illum nam.",]
         },

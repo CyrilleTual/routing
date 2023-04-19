@@ -5,6 +5,7 @@ import cloud from '../assets/img/pexels-pixabay-531972.jpg'
 function Cloud() {
   const items =[
     {
+      icon : false,
       price: "29,99",
       text: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe excepturi nobis deleniti soluta, fugiat recusandae laboriosam possimus necessitatibus deserunt, id odit eius commodi, est asperiores corporis ea animi quo quasi..",
