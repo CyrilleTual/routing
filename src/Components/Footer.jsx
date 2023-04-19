@@ -13,7 +13,7 @@ function Footer() {
               <Link to={"connect"}>Se connecter</Link>
 
             </nav>
-        </footer>
+    </footer>
   )
 }
 

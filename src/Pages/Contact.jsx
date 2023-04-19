@@ -1,4 +1,6 @@
 import React from 'react'
+import  "./Contact.css";
+import Modal from '../Components/Modal';
 
 function Contact() {
 
@@ -10,8 +12,9 @@ function Contact() {
     newsLetter: "oui",
   });
 
+  const [show, setShow] =React.useState(false)
+
   const uptForm = (e) => {
-    e.preventDefault();
     console.log(e.target.value)
     console.log(e.target.name)
     setContact({...contact, [e.target.name]: e.target.value})
@@ -19,13 +22,22 @@ function Contact() {
     console.log(contact)
   }
 
+  function submitHandler(e) {
+    e.preventDefault();
+    //alert (Object.values(contact))
+    setShow(true);
+  }
+
+
+
+
   return (
     <div className='details'>
       <h1>Contact</h1>
-    {console.log(contact)}
-      <form>
+
+      <form onSubmit={submitHandler}>
         <label htmlFor="lastName">Votre Nom: </label>
-        <input type="text" id="lastName" name="lastName" value={contact.lastName} onChange={uptForm}/>
+        <input type="text" id="lastName" name="lastName" value={contact.lastName} onChange={uptForm}/><br />
 
         <label htmlFor="firstName">Votre Prénom: </label>
         <input type="text" id="firstName" name="firstName" value={contact.firstName} onChange={uptForm}/>
@@ -39,35 +51,42 @@ function Contact() {
             onChange={uptForm}>
         </textarea>
 
-        <label htmlFor="newsLetterYes">Ok pour le news letter</label>
-        <input type="radio" 
+        <fieldset>
+          <legend>Je m'abonne à la news-letter : </legend>
+
+          <div>
+             <input type="radio" 
               id="newsLetterYes" 
               name="newsLetter" 
               checked={contact.newsLetter === "oui"}
               value="oui"
               onChange={uptForm}/>
-            
+              <label htmlFor="newsLetterYes">Oui avec plaisir</label>
+          </div> 
 
-        <label htmlFor="newsLetterNo">Non merci</label>
-        <input type="radio" 
-              id="newsLetterNo" 
-              name="newsLetter" 
-              checked={contact.newsLetter === "non"}
-              value="non" 
-              onChange={uptForm}>
-        </input>
+          <div>
+            <input type="radio" 
+                id="newsLetterNo" 
+                name="newsLetter" 
+                checked={contact.newsLetter === "non"}
+                value="non" 
+                onChange={uptForm}/>
+                <label htmlFor="newsLetterNo">Non merci</label>
+          </div>
 
+        </fieldset>
+
+        <button>Envoyer</button>
+
+        <Modal onClose={()=> setShow(false)} show={show} contact={contact} />
+     
       </form>
-
       <address>
         Monsieur Tutu <br />
         la petite maison <br />
         97000 Petit village dans la Pampa <br />
         e-mail : <a href="mailto:John.Doe@gmail.com">John.doe@gmail.com</a> <br/>
       </address>
-
-  
-
 
     </div>
   )
