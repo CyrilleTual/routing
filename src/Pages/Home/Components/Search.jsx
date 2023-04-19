@@ -2,7 +2,7 @@ import React from 'react'
 
 function Search() {
   return (
-    <form class="search">
+    <form className="search">
 
     <fieldset>
         <input

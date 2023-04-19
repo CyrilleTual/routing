@@ -1,6 +1,6 @@
 import React from 'react'
-import DisplayContent from '../Components/DisplayContent'
-import cloud from '../assets/img/pexels-pixabay-531972.jpg'
+import DisplayContent from '../../Components/DisplayContent'
+import cloud from '../../assets/img/pexels-pixabay-531972.jpg'
 
 function Cloud() {
   const items =[

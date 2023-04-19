@@ -1,6 +1,6 @@
 import React from 'react'
-import  "./Contact.css";
-import Modal from '../Components/Modal';
+import  styles from"./index.module.css";
+import Modal from './Components/Modal.jsx';
 
 function Contact() {
 
@@ -35,15 +35,16 @@ function Contact() {
     <div className='details'>
       <h1>Contact</h1>
 
-      <form onSubmit={submitHandler}>
+      <form className={styles.contact_form} onSubmit={submitHandler}>
         <label htmlFor="lastName">Votre Nom: </label>
-        <input type="text" id="lastName" name="lastName" value={contact.lastName} onChange={uptForm}/><br />
+        <input className={styles.contact_ipt} type="text" id="lastName" name="lastName" value={contact.lastName} onChange={uptForm}/><br />
 
         <label htmlFor="firstName">Votre Prénom: </label>
-        <input type="text" id="firstName" name="firstName" value={contact.firstName} onChange={uptForm}/>
+        <input className={styles.contact_ipt} type="text" id="firstName" name="firstName" value={contact.firstName} onChange={uptForm}/>
 
         <label htmlFor="textContact">Votre demande:</label>
         <textarea 
+            className={styles.contact_ipt}
             id="textContact" 
             name="textContact"
             rows="5" cols="33"
@@ -51,11 +52,12 @@ function Contact() {
             onChange={uptForm}>
         </textarea>
 
-        <fieldset>
+        <fieldset className={styles.contact_field}>
           <legend>Je m'abonne à la news-letter : </legend>
 
           <div>
-             <input type="radio" 
+             <input type="radio"
+             className={styles.radio} 
               id="newsLetterYes" 
               name="newsLetter" 
               checked={contact.newsLetter === "oui"}
@@ -65,7 +67,8 @@ function Contact() {
           </div> 
 
           <div>
-            <input type="radio" 
+            <input type="radio"
+                className={styles.radio}  
                 id="newsLetterNo" 
                 name="newsLetter" 
                 checked={contact.newsLetter === "non"}

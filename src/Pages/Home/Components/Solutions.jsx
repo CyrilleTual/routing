@@ -1,5 +1,5 @@
 import React from 'react'
-import DisplayContent from './DisplayContent'
+import DisplayContent from '../../../Components/DisplayContent'
 
 function Solutions() {
 

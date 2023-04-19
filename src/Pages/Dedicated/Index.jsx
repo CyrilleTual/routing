@@ -1,6 +1,6 @@
 import React from 'react'
-import DisplayContent from '../Components/DisplayContent';
-import server from '../assets/img/pexels-brett-sayles-2881233.jpg'
+import DisplayContent from '../../Components/DisplayContent';
+import server from '../../assets/img/pexels-brett-sayles-2881233.jpg'
 
 function Dedie() {
   const items =[

@@ -1,0 +1,24 @@
+.contact_form {
+    width : 50%;
+    margin: auto;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+.contact_ipt {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.contact_field  {
+    flex-direction: column;
+	border: 2px solid lightslategray;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.radio{
+    margin: 0.4rem;
+}
