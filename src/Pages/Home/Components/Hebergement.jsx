@@ -1,8 +1,12 @@
 import React from 'react'
 import DisplayContent from '../../../Components/DisplayContent'
-import { dataHosting as items } from '../../../datas/datas';
+import { datasToDisplay } from '../../../datas/datas2';
+
+
 
 function Hebergement() {
+
+  const items = datasToDisplay["dataHosting"];
 
   return (
     <section>

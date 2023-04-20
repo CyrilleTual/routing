@@ -1,6 +1,8 @@
 import React from 'react'
 import  styles from"./index.module.css";
 import Modal from './Components/Modal.jsx';
+import MyLabel from '../Components/Label';
+import MyInput from '../Components/Input';
 
 function Contact() {
 
@@ -21,7 +23,6 @@ function Contact() {
 
   function submitHandler(e) {
     e.preventDefault();
-    //alert (Object.values(contact))
     setShow(true);
   }
 
@@ -30,34 +31,38 @@ function Contact() {
       <h1>Contact</h1>
 
       <form className={styles.contact_form} onSubmit={submitHandler}>
-        <label htmlFor="lastName">Votre Nom: </label>
-        <input className={styles.contact_ipt} type="text" id="lastName" name="lastName" value={contact.lastName} onChange={uptForm}/><br />
+       
+        <MyLabel lblFor="lastName" lblTxt="Votre Nom:" />    
+        <MyInput toto="input" class ={styles.contact_ipt} type="text" id ="lastName" name ="lastName" value ={contact.lastName} change = {uptForm}/>
 
-        <label htmlFor="firstName">Votre Prénom: </label>
-        <input className={styles.contact_ipt} type="text" id="firstName" name="firstName" value={contact.firstName} onChange={uptForm}/>
+        <MyLabel lblFor="firstName" lblTxt="Votre Prénom: " />
+        <MyInput toto="input" class ={styles.contact_ipt} type="text" id ="firtsName" name ="firstName" value ={contact.firstName} change = {uptForm}/>
 
-        <label htmlFor="textContact">Votre demande:</label>
-        <textarea 
-            className={styles.contact_ipt}
-            id="textContact" 
-            name="textContact"
-            rows="5" cols="33"
-            value={contact.textContact}
-            onChange={uptForm}>
-        </textarea>
+        <MyLabel lblFor="textContact" lblTxt="Votre demande:" />
 
+        <MyInput 
+            toto = "textArea"
+            class={styles.contact_ipt}
+            id = "textContact" 
+            name = "textContact"
+            value = {contact.textContact}
+            change = {uptForm}
+            rows="5" 
+            cols="33"
+        />    
+        
         <fieldset className={styles.contact_field}>
           <legend>Je m'abonne à la news-letter : </legend>
 
           <div>
              <input type="radio"
-             className={styles.radio} 
+              className={styles.radio} 
               id="newsLetterYes" 
               name="newsLetter" 
               checked={contact.newsLetter === "oui"}
               value="oui"
               onChange={uptForm}/>
-              <label htmlFor="newsLetterYes">Oui avec plaisir</label>
+              <MyLabel lblFor="newsLetterYes" lblTxt="Oui avec plaisir" />     
           </div> 
 
           <div>
@@ -68,7 +73,7 @@ function Contact() {
                 checked={contact.newsLetter === "non"}
                 value="non" 
                 onChange={uptForm}/>
-                <label htmlFor="newsLetterNo">Non merci</label>
+               <MyLabel lblFor="newsLetterNo" lblTxt="Non merci" />  
           </div>
 
         </fieldset>

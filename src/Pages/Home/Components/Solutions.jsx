@@ -1,8 +1,10 @@
 import React from 'react'
 import DisplayContent from '../../../Components/DisplayContent'
-import { dataSolution as items } from '../../../datas/datas'
+import { datasToDisplay } from '../../../datas/datas2';
 
 function Solutions() {
+
+  const items = datasToDisplay["dataSolution"]
 
   return (
     <section>
