@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from "../assets/img/logo.png"
+import style from "./header.module.css"
 
 function Header() {
   return (
 
-    <header>
+    <header className={style.myHeader}>
 
       <Link to={"./"}  title="Retour à la page d'accueil"  >
         <img src={logo} alt="Logo du site" />

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import style from './footer.module.css'
 
 function Footer() {
   return (
-    <footer>
+    <footer className={style.myFooter}>
             <nav>
               <Link to={"./"}>Accueil</Link>
               <Link to={"mutualise"}>Serveur Mutualisé</Link>

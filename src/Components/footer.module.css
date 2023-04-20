@@ -1,0 +1,18 @@
+/* NAV FOOTER */
+
+.myFooter nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.myFooter nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--body-bg);
+    padding: 0.5rem 0;
+    width: 50%;
+    font-size: 1.4rem;
+    text-align: center;
+}

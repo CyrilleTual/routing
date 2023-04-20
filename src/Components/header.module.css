@@ -1,0 +1,21 @@
+/* NAV HEADER */
+.myHeader img {
+    margin: 3rem auto;
+}
+
+.myHeader nav {
+    text-align: center;    
+}
+
+.myHeader nav a {
+    display: block;
+    margin: 0.5rem;
+    padding: 1rem;
+    color: var(--primary); 
+    text-decoration: none;   
+}
+
+.myHeader nav a:hover i,
+.myHeader nav a:hover {
+    color: var(--secondary);
+}

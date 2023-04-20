@@ -1,0 +1,13 @@
+.subHeader {
+    background: url(../../../assets/img/background.jpg) no-repeat center;
+    background-size: cover;
+    padding: 10%;
+    color: var(--body-bg);
+    
+}
+
+.subHeader p {
+    padding: 0 20%;
+    text-align: center;
+   
+}

@@ -15,11 +15,8 @@ function Contact() {
   const [show, setShow] =React.useState(false)
 
   const uptForm = (e) => {
-    console.log(e.target.value)
-    console.log(e.target.name)
     setContact({...contact, [e.target.name]: e.target.value})
     //setContact( (old) => ({...old, [e.target.name]: e.target.value}) )
-    console.log(contact)
   }
 
   function submitHandler(e) {
@@ -27,9 +24,6 @@ function Contact() {
     //alert (Object.values(contact))
     setShow(true);
   }
-
-
-
 
   return (
     <div className='details'>

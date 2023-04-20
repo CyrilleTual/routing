@@ -1,8 +1,9 @@
 import React from 'react'
+import style from './headerMain.module.css'
 
 function HeaderMain() {
   return (
-    <header className="sub-header">
+    <header className={style.subHeader}>
         <h1>L'hébergement à prix libre</h1>
         <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
