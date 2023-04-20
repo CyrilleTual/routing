@@ -1,19 +1,8 @@
 import React from 'react'
 import DisplayContent from '../../Components/DisplayContent'
+import { dataShared as items } from '../../datas/datas'
 
 function Mutualise() {
-
-  const items =[
-    {
-      icon : false,
-      price: "9,99",
-      text: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam.",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore neque rerum soluta at corrupti consectetur doloribus, earum aut explicabo libero incidunt velit nesciunt dolore optio iste accusantium cupiditate est atque. Quae voluptatem exercitationem eligendi similique reprehenderit aliquid perspiciatis delectus! Porro ipsa esse quibusdam nobis eos suscipit molestias possimus dicta atque!"
-      ],
-    } 
-  ]
 
   return (
     <div className='details'>

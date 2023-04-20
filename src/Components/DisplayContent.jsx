@@ -9,10 +9,8 @@ function DisplayContent({item}) {
 
             {item.icon &&  <FontAwesomeIcon icon={faUser} />}
             {item.title && <h3>{item.title}</h3>}
-            {/** Vérifie si il y a bien un prix et l'affiche */}
             {item.price && <p className="price">{item.price}€ / mois</p>}
-            
-                {(item.text.map((txt, i) => <p index={i} >{txt}</p>))}
+            {item.text.map((txt, i) => <p index={i}>{txt}</p>)}
             
         </React.Fragment>
     )
