@@ -1,0 +1,30 @@
+/* FORM recherche */
+.search {    
+    background-color: var(--primary);
+    width: 100%;
+}
+.search [type="submit"] {
+    background-color: var(--primary);
+    width: 10%;
+    border: none;
+    color: var(--body-bg);
+}
+
+.search fieldset{
+    display: flex;
+    border: none;
+}
+
+.search ::placeholder{
+    color: var(--body-bg);
+}
+
+.search [type="search"] {
+    background-color: var(--primary);
+    padding: 10px 10px 10px 75px;
+    width: 90%;
+    border: none;
+    color: #fcfcfc;
+    font-size: 1.8rem;
+}
+

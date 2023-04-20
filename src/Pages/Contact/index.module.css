@@ -1,5 +1,6 @@
 .contact_form {
     width : 50%;
+    background-color: var(--primary);
     margin: auto;
     padding: 20px;
     color: black;

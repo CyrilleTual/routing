@@ -9,7 +9,6 @@ function Cloud() {
     <div className='details'>
       <h1>Service cloud</h1>
       <img className='imgDetails' src={cloud} alt="nuage" />
-      {/* {items.map((item, i)=> <article key={i}> {<DisplayContent item={item} />} </article>)} */}
        {items.map((item, i)=> <article key={i}> {<DisplayContent item={item} />} </article>)}
     </div>
   )

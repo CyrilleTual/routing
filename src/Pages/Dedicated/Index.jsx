@@ -4,7 +4,6 @@ import server from '../../assets/img/pexels-brett-sayles-2881233.jpg'
 import { dataDedicated as items } from '../../datas/datas';
 
 function Dedie() {
-
   return (
     <div className='details'>
       <h1>Serveur Dédié</h1>

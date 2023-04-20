@@ -1,4 +1,7 @@
 /* NAV FOOTER */
+.myFooter{
+     background-color: var(--secondary);
+}
 
 .myFooter nav {
     display: flex;

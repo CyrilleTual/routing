@@ -15,8 +15,8 @@ const dataHosting = [
         "title":"Serveur Dédié",
         "price":"19,99","text":
         [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam.",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam."
-            ,"Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis qui ipsum maxime architecto illum nam."
         ]
     },
     {
@@ -49,7 +49,8 @@ const dataSolution = [
     {
         "icon":true,
         "title":"Configuration",
-        "text":[
+        "text":
+        [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit Facilis qui ipsum maxime architecto illum nam."
         ]
     },

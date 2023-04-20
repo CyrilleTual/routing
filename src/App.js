@@ -11,6 +11,7 @@ import Shared from './Pages/Shared/Shared.jsx';
 import Dedicated from './Pages/Dedicated/Index.jsx';
 import Cloud from './Pages/Cloud/Index.jsx';
 import Connect from './Pages/Connect/Index.jsx';
+import Hosting from './Pages/Hosting/Index';
 
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
           <Route path={"/"} element={<Home />} />
           <Route path={"mutualise"} element={<Shared />} />
           <Route path={"dedie"} element={<Dedicated />} />
-          <Route path={"cloud"} element={<Cloud />} />
           <Route path={"contact"} element={<Contact />} />   
-          <Route path={"connect"} element={<Connect />} />  
+          <Route path={"connect"} element={<Connect />} />
+          <Route path={"cloud"} element={<Cloud />} />
+
       </Routes>
 
       </main>
